@@ -1,0 +1,370 @@
+body {
+    color: #595049;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+#root section {
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid #595049;
+}
+
+#root #landing_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#root #landing_section nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 120px;
+    width: 100%;
+    padding: 0 100px;
+}
+
+#root #landing_section nav img { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 200px;
+}
+
+#root #landing_section nav ol { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#root #landing_section nav ol li { 
+    font-size: 18px;
+    letter-spacing: 0.1em; 
+}
+
+#root #landing_section .landing_brown_on_left {
+    position: absolute;
+    background-color: #d1bfab;
+    top: 120px;
+    left: 0;
+    height: 430px;
+    width: 220px;
+    box-shadow: 0px 5px 5px #88888888;
+}
+
+#root #landing_section .landing_brown_on_right {
+    position: absolute;
+    background-color: #d1bfab;
+    background-image: url("../images/texture.png");
+    background-blend-mode: soft-light;
+    top: 50%;
+    right: 80px;
+    height: 700px;
+    width: 130px;
+    box-shadow: 0px 5px 5px #88888888;
+}
+
+#root #landing_section .landing_content img{
+    box-shadow: 5px 5px 5px #88888888;
+}
+
+#root #landing_section .landing_text {
+    align-self: flex-start;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    border-left: 3px solid #d1bfab;
+    border-bottom: 3px solid #d1bfab;
+}
+
+#root #landing_section .landing_text h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Slider section */
+#root #slider_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#root #slider_section h2 {
+    font-size: 35px;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+}
+
+#root #slider_section .slider_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#root #slider_section .slider_div h3 {
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.8em;
+}
+
+#root #slider_section .slider_div h3:nth-child(1) {
+    text-align: right;
+}
+
+#root #slider_section .slider_div .slider {
+    height: 350px;
+    width: 1000px;
+    background-color: #c9bbae;
+}
+
+#root #slider_section .slider_brown_on_left {
+    position: absolute;
+    background-color: #c9bbae;
+    top: 70%;
+    left: 0;
+    height: 430px;
+    width: 220px;
+    box-shadow: 0px 5px 5px #88888888;
+}
+
+#root #slider_section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9bbae;
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+/* About section */
+#root #about_section {
+    position: relative;
+}
+
+#root #about_section div {
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+#root #about_section .brown_div:nth-child(1) {
+    background-color: #c9bbae;
+    top: 50%;
+    left: calc(30% + 30px);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 5px #88888888;
+}
+
+#root #about_section .brown_div:nth-child(2) {
+    background-color: #c9bbae;
+    top: 50%;
+    left: calc(70% + 30px);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 5px #88888888;
+}
+
+#root #about_section img {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+#root #about_section .about_text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    top: calc(50% - 30px);
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #614b3e;
+    height: 600px;
+    width: 400px;
+    padding: 30px;
+    color: #fff;
+}
+
+#root #about_section .about_text h2 {
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+#root #about_section .about_text p {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+#root #about_section a {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1bfab;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Reviews section */
+#root #reviews_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#root #reviews_section h2 {
+    font-size: 40px;
+    letter-spacing: 0.1em;
+}
+
+#root #reviews_section .reviews_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 600px;
+    width: 1100px;
+}
+
+#root #reviews_section .reviews_div.hide {
+    display: none;
+}
+
+#root #reviews_section .reviews_div .id {
+    display: none;
+}
+
+#root #reviews_section .reviews_div h3 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#root #reviews_section .reviews {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 500px;
+    width: 1100px;
+}
+
+#root #reviews_section .reviews button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9bbae;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+#root #reviews_section .reviews button.left {
+    left: 0;
+}
+
+#root #reviews_section .reviews button.right {
+    right: 0;
+}
+
+#root #reviews_section .reviews .review_text_div {
+    position: relative;
+    background: linear-gradient(to right, #846a59, #b29889);
+    align-self: flex-end;
+    display: flex;
+    height: 400px;
+    width: 700px;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
+#root #reviews_section .reviews img {
+    position: absolute;
+    background-color: #595049;
+    left: 100px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#root #reviews_section .reviews p {
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    transform: translateY(-50%);
+    width: 400px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+#root #reviews_section .reviews .symbols{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: unset;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 300px;
+}
