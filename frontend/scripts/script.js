@@ -1,6 +1,5 @@
 async function loadEvent() {
     const reviews_section = document.getElementById("reviews_section");
-    /* const reviews_data = await fetch("..data/reviews.json"); */
     const reviews_data = await fetch("data/reviews.json");
     const reviews_json = await reviews_data.json();
     
@@ -14,8 +13,8 @@ async function loadEvent() {
             <span class="id">${reviews_json[0].id}</span>
             <h3 class="review_names">${reviews_json[0].names}</h3>
             <div class="reviews">
-                <button class="left">&#8249</button>
-                <button class="right">&#8250</button>
+                <button class="left"><span class="button_span">&#8249</span></button>
+                <button class="right"><span class="button_span">&#8250</span></button>
                 <img src="./images/${reviews_json[0].img}" alt="" class="review_image">
                 <div class="review_text_div">
                     <p class="review_text">${reviews_json[0].review}</p>
