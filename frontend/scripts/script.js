@@ -1,7 +1,7 @@
 async function loadEvent() {
     const reviews_section = document.getElementById("reviews_section");
     /* const reviews_data = await fetch("..data/reviews.json"); */
-    const reviews_data = await fetch("reviews.json");
+    const reviews_data = await fetch("data/reviews.json");
     const reviews_json = await reviews_data.json();
     
     let spans = `<span>&#9670</span>`;
